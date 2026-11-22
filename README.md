@@ -23,17 +23,25 @@ Les cinq microservices sont enregistrés et **UP** (`http://localhost:8761`).
 
 Routes `/health` et `/info` dans `src/app.js` (avant le handler 404), et URLs déclarées dans `src/server.js`.
 
-| `GET /health` | `GET /info` |
-|---|---|
-| ![Meeting health](screenshots/meeting-health.png) | ![Meeting info](screenshots/meeting-info.png) |
+**GET /health**
+
+![Meeting health](screenshots/meeting-health.png)
+
+**GET /info**
+
+![Meeting info](screenshots/meeting-info.png)
 
 ## Tâche 2 : Notification (Python / FastAPI)
 
 Routes `/health` et `/info` dans `app/main.py`, et paramètres `health_check_url` et `status_page_url` dans `eureka_client.init_async(...)`.
 
-| `GET /health` | `GET /info` |
-|---|---|
-| ![Notification health](screenshots/notification-health.png) | ![Notification info](screenshots/notification-info.png) |
+**GET /health**
+
+![Notification health](screenshots/notification-health.png)
+
+**GET /info**
+
+![Notification info](screenshots/notification-info.png)
 
 ### Vérification dans le registre
 
