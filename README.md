@@ -2,12 +2,12 @@
 
 ## Équipe
 
-Molka Kammoun 
-Esra Masmoudi
-Mohamed Khouni
-Nermine Karoui
-Samar Masmoudi
-Lina Kazdaghli
+- Molka Kammoun
+- Esra Masmoudi
+- Mohamed Khouni
+- Nermine Karoui
+- Samar Masmoudi
+- Lina Kazdaghli
 
 ## Ports
 
@@ -22,21 +22,18 @@ Lina Kazdaghli
 
 ## Dashboard Eureka
 
+### Vue d'ensemble des services enregistrés
+
 ![Dashboard Eureka](screenshots/eureka-dashboard.png)
 
-## Tâche 1 : Meeting
 
-Le port est lu depuis la variable d'environnement `PORT` (8083 par défaut).
+## Tâche 1 : Microservice Meeting
 
-```powershell
-# Instance 1
-node src/server.js
-
-# Instance 2
-$env:PORT=8093; node src/server.js
-```
+### Vérifier le health du microservice Meeting
 
 ![Meeting health](screenshots/meeting-health.png.png)
+
+### Vérifier les informations du microservice Meeting
 
 ![Meeting info](screenshots/meeting-info.png.png)
 
@@ -44,18 +41,23 @@ $env:PORT=8093; node src/server.js
 
 Les deux instances (`meeting:8083` et `meeting:8093`) sont enregistrées sous le même nom MEETING : le dashboard affiche `UP (2)`.
 
-![Instances Meeting dans Eureka](screenshots/eureka-meeting-instances.png.png)
 
-![Meeting health 8093](screenshots/meeting-health-8093.png.png)
+## Tâche 2 : Microservice Notification 
 
-## Tâche 2 : Notification
+### Vérifier le health du microservice Notification
 
 ![Notification health](screenshots/notification-health.png.png)
 
+### Vérifier les informations du microservice Notification
+
 ![Notification info](screenshots/notification-info.png.png)
 
-### Registre Eureka
+### Enregistrement dans Eureka
+
+#### Notification dans le registre Eureka
 
 ![Registre Eureka](screenshots/eureka-notification-registry.png.png)
+
+#### statusPageUrl et healthCheckUrl de Notification
 
 ![statusPageUrl et healthCheckUrl](screenshots/eureka-notification-urls.png.png)
