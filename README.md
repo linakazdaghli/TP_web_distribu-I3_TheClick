@@ -36,26 +36,26 @@ node src/server.js
 $env:PORT=8093; node src/server.js
 ```
 
-![Meeting health](screenshots/meeting-health.png)
+![Meeting health](screenshots/meeting-health.png.png)
 
-![Meeting info](screenshots/meeting-info.png)
+![Meeting info](screenshots/meeting-info.png.png)
 
 ### Plusieurs instances de Meeting
 
 Les deux instances (`meeting:8083` et `meeting:8093`) sont enregistrées sous le même nom MEETING : le dashboard affiche `UP (2)`.
 
-![Instances Meeting dans Eureka](screenshots/eureka-meeting-instances.png)
+![Instances Meeting dans Eureka](screenshots/eureka-meeting-instances.png.png)
 
-![Meeting health 8093](screenshots/meeting-health-8093.png)
+![Meeting health 8093](screenshots/meeting-health-8093.png.png)
 
 ## Tâche 2 : Notification
 
-![Notification health](screenshots/notification-health.png)
+![Notification health](screenshots/notification-health.png.png)
 
-![Notification info](screenshots/notification-info.png)
+![Notification info](screenshots/notification-info.png.png)
 
 ### Registre Eureka
 
-![Registre Eureka](screenshots/eureka-notification-registry.png)
+![Registre Eureka](screenshots/eureka-notification-registry.png.png)
 
-![statusPageUrl et healthCheckUrl](screenshots/eureka-notification-urls.png)
+![statusPageUrl et healthCheckUrl](screenshots/eureka-notification-urls.png.png)
